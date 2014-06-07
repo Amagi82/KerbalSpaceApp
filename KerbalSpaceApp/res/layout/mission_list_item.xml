@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#111" >
+
+    <ImageView
+        android:id="@+id/imagePlanetSelection"
+        android:layout_width="69dp"
+        android:layout_height="75dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/planet"
+        android:src="@drawable/kerbin" />
+
+    <TextView
+        android:id="@+id/tvOrbitHeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#eee" />
+
+    <ImageView
+        android:id="@+id/imageLandingStatus"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tvOrbitHeight"
+        android:contentDescription="@string/land"
+        android:src="@drawable/ic_rocket" />
+
+    <TextView
+        android:id="@+id/tvTakeOffHeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imagePlanetSelection"
+        android:layout_alignParentRight="true"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#eee" />
+
+    <TextView
+        android:id="@+id/tvDeltaVSum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageLandingStatus"
+        android:layout_marginBottom="7dp"
+        android:layout_marginRight="4dp"
+        android:layout_toLeftOf="@+id/imageLandingStatus"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#fff" />
+
+    <TextView
+        android:id="@+id/tvDeltaVData1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_margin="2dp"
+        android:layout_toRightOf="@+id/imagePlanetSelection"
+        android:textColor="#ccc"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tvDeltaVData2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvDeltaVData1"
+        android:layout_margin="2dp"
+        android:layout_toRightOf="@+id/imagePlanetSelection"
+        android:textColor="#ccc"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tvDeltaVData3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvDeltaVData2"
+        android:layout_margin="2dp"
+        android:layout_toRightOf="@+id/imagePlanetSelection"
+        android:textColor="#ccc"
+        android:textSize="12sp" />
+
+</RelativeLayout>

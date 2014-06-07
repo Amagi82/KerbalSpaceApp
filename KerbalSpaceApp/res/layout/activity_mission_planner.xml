@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#111"
+    android:orientation="vertical"
+    tools:context="com.amagi82.kerbalspaceapp.MissionPlanner$PlaceholderFragment" >
+
+    <TextView
+        android:id="@+id/tvTotalDeltaV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/zeroDV"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FFF" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvTotalDeltaV"
+        android:layout_centerHorizontal="true"
+        android:text="@string/total_delta_v"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FFF" />
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/textView2"
+        android:layout_alignParentTop="true" >
+
+        <view
+            android:id="@+id/listViewBackground"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            class="com.amagi82.kerbalspaceapp.BackgroundContainer" >
+
+            <ListView
+                android:id="@+id/list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:divider="@null"
+                android:dividerHeight="0dp" />
+        </view>
+    </RelativeLayout>
+
+</RelativeLayout>
