@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity$CelestialBodyFragment" >
+
+    <ImageButton
+        android:id="@+id/imageButtonMain"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/celestial_body" />
+
+    <ImageButton
+        android:id="@+id/imageButtonMoon1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/imageButtonMain"
+        android:contentDescription="@string/celestial_moon"
+        android:visibility="invisible"/>
+
+    <ImageButton
+        android:id="@+id/imageButtonMoon2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/imageButtonMoon1"
+        android:contentDescription="@string/celestial_moon"
+        android:visibility="invisible" />
+    <ImageButton
+        android:id="@+id/imageButtonMoon3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/imageButtonMoon2"
+        android:contentDescription="@string/celestial_moon"
+        android:visibility="invisible" />
+    <ImageButton
+        android:id="@+id/imageButtonMoon4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/imageButtonMoon3"
+        android:contentDescription="@string/celestial_moon" 
+        android:visibility="invisible" />
+    <ImageButton
+        android:id="@+id/imageButtonMoon5"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/imageButtonMoon4"
+        android:contentDescription="@string/celestial_moon"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/textViewDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageButtonMoon1"
+        android:layout_below="@+id/imageButtonMoon1"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <ExpandableListView
+        android:id="@+id/orbitInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/imageButtonMain" >
+    </ExpandableListView>
+    
+    <ExpandableListView
+        android:id="@+id/surfaceInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/orbitInfo" >
+    </ExpandableListView>
+    
+    <ExpandableListView
+        android:id="@+id/deltaV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/surfaceInfo" >
+    </ExpandableListView>
+    
+    <ExpandableListView
+        android:id="@+id/departureWindows"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/deltaV" >
+    </ExpandableListView>
+
+</RelativeLayout>
