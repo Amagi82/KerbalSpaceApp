@@ -75,8 +75,8 @@ public class MissionDestination extends Activity {
 		// Display current settings at the bottom
 		SharedPreferences prefs = getSharedPreferences("settings", MODE_PRIVATE);
 		mClearanceValue = prefs.getInt("mClearanceValue", 1000);
-		mMarginsValue = prefs.getInt("mMarginsValue", 20);
-		mInclinationValue = prefs.getInt("mInclinationValue", 20);
+		mMarginsValue = prefs.getInt("mMarginsValue", 10);
+		mInclinationValue = prefs.getInt("mInclinationValue", 30);
 
 		// There is no direct numerical efficiency determination for an inclination change, so this gives the user an approximate idea
 		if (mInclinationValue == 0) {

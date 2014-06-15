@@ -53,8 +53,8 @@ public class Settings extends Activity {
 
 		SharedPreferences prefs = getSharedPreferences("settings", MODE_PRIVATE);
 		mClearanceValue = prefs.getInt("mClearanceValue", 1000);
-		mMarginsValue = prefs.getInt("mMarginsValue", 20);
-		mInclinationValue = prefs.getInt("mInclinationValue", 20);
+		mMarginsValue = prefs.getInt("mMarginsValue", 10);
+		mInclinationValue = prefs.getInt("mInclinationValue", 30);
 
 		SeekBar clearance = (SeekBar) findViewById(R.id.seekBarClearance);
 		SeekBar margins = (SeekBar) findViewById(R.id.seekBarMargins);

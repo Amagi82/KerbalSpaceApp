@@ -25,6 +25,7 @@ import java.util.List;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Intent;
+import android.content.pm.PackageManager.NameNotFoundException;
 import android.content.res.Configuration;
 import android.net.Uri;
 import android.os.Bundle;
@@ -44,6 +45,7 @@ public class MainActivity extends Activity {
 	private ActionBarDrawerToggle mDrawerToggle;
 	private CharSequence mDrawerTitle;
 	private CharSequence mTitle;
+	private String version;
 	NavigationDrawerAdapter adapter;
 	List<NavigationDrawerItem> dataList;
 
@@ -75,6 +77,13 @@ public class MainActivity extends Activity {
 		adapter = new NavigationDrawerAdapter(this, R.layout.navigation_drawer_item, dataList);
 		mDrawerList.setAdapter(adapter);
 		mDrawerList.setOnItemClickListener(new DrawerItemClickListener());
+
+		// Get the app version name from the manifest for the About section
+		try {
+			version = this.getPackageManager().getPackageInfo(this.getPackageName(), 0).versionName;
+		} catch (NameNotFoundException e) {
+			version = "Unknown";
+		}
 
 		// Enable ActionBar app icon to behave as action to toggle nav drawer
 		getActionBar().setDisplayHomeAsUpEnabled(true);
@@ -137,12 +146,15 @@ public class MainActivity extends Activity {
 			startActivity(new Intent(this, Settings.class));
 			break;
 		case 4:
+			// opens the KSP forum feedback thread
 			startActivity(new Intent(Intent.ACTION_VIEW,
 					Uri.parse("http://forum.kerbalspaceprogram.com/threads/82203-Kerbal-Space-App-for-Android!")));
 			break;
 		case 5:
+			// alertdialog for the About section
 			AlertDialog.Builder builder = new AlertDialog.Builder(this, AlertDialog.THEME_HOLO_DARK);
-			builder.setMessage(R.string.version).setNeutralButton(R.string.dismiss, null).show();
+			builder.setMessage(getResources().getString(R.string.app_name) + " v" + version + getResources().getString(R.string.version))
+					.setNeutralButton(R.string.dismiss, null).show();
 			break;
 		default:
 			break;

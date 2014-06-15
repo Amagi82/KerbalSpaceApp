@@ -197,8 +197,8 @@ public class CelestialBodyActivity extends FragmentActivity {
 			// Acquire the most recent settings data
 			SharedPreferences prefs = getActivity().getSharedPreferences("settings", MODE_PRIVATE);
 			int mClearanceValue = prefs.getInt("mClearanceValue", 1000);
-			int mMarginsValues = prefs.getInt("mMarginsValue", 20);
-			int mInclinationValues = prefs.getInt("mInclinationValue", 20);
+			int mMarginsValues = prefs.getInt("mMarginsValue", 10);
+			int mInclinationValues = prefs.getInt("mInclinationValue", 30);
 			float mMarginsValue = (float) mMarginsValues / 100 + 1;
 			float mInclinationValue = (float) mInclinationValues / 100;
 

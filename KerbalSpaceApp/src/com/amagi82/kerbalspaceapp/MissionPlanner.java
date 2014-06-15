@@ -135,8 +135,8 @@ public class MissionPlanner extends Activity {
 		// This is in onResume so it refreshes deltaV when the user returns from adjusting settings
 		SharedPreferences prefs = getSharedPreferences("settings", MODE_PRIVATE);
 		int mClearanceValue = prefs.getInt("mClearanceValue", 1000);
-		int mMarginsValues = prefs.getInt("mMarginsValue", 20);
-		int mInclinationValues = prefs.getInt("mInclinationValue", 20);
+		int mMarginsValues = prefs.getInt("mMarginsValue", 10);
+		int mInclinationValues = prefs.getInt("mInclinationValue", 30);
 		float mMarginsValue = (float) mMarginsValues / 100 + 1;
 		float mInclinationValue = (float) mInclinationValues / 100;
 
@@ -454,16 +454,17 @@ public class MissionPlanner extends Activity {
 	@Override
 	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 		super.onActivityResult(requestCode, resultCode, data);
-		MissionData result = data.getParcelableExtra("returnItem");
-		if (resultCode == RESULT_OK) {
+
+		if (resultCode == RESULT_OK && data != null) {
+			MissionData result = data.getParcelableExtra("returnItem");
 			if (data.getBooleanExtra("isNewItem", true)) {
 				missionData.add(result);
 			} else {
 				missionData.set(requestCode, result);
 			}
+			mAdapter.notifyDataSetChanged();
+			refreshDeltaV();
 		}
-		mAdapter.notifyDataSetChanged();
-		refreshDeltaV();
 		if (resultCode == RESULT_CANCELED) {
 		}
 

@@ -73,9 +73,9 @@
     <string name="bop_description">Bop is Jool\'s fourth moon. It is a captured asteroid similar to Gilly. Some of its mountains rise nearly 22 km above the surface, making it dangerous to orbit closely</string>
     <string name="pol_description">Pol is Jool\'s fifth and smallest moon. Pol has the second-lowest surface gravity in the Kerbol system after Gilly.</string>
     <string name="eeloo_description">Eeloo is an icy dwarf planet, furthest from Kerbol. Its orbit intersects Jool\'s, but in a 3:2 resonance, which, coupled with their different inclinations, ensures they cannot collide. It could be considered the Pluto analogue of KSP.</string>
-    <string name="version">Kerbal Space App v1.01 \n\nAuthor: Amagi82\n\nI am not affiliated with Kerbal Space Program. I just love KSP and want to give back to the community. If you\'d like to contact me for any reason, click on Feedback.</string>
+    <string name="version">\n\nAuthor: Amagi82\n\nI am not affiliated with Kerbal Space Program. I just love KSP and want to give back to the community. If you\'d like to contact me for any reason, click on Feedback.</string>
     <string name="help_clearance">Zero surface clearance assumes a perfect ascent, barely clearing the atmosphere or the tallest mountain. Add surface clearance for a higher orbit. Note that a higher orbit will also increase delta V requirements to reach other planets. Circular orbits are assumed.</string>
-    <string name="help_margins">Percentage of extra delta V to account for human error. 0% would be the minimum possible requirements for a perfect maneuver. Recommend 20% for typical missions.</string>
+    <string name="help_margins">Percentage of extra delta V to account for human error. 0% would be the minimum possible requirements for a perfect maneuver. Default is 10%.</string>
     <string name="help_inclination">Best case situation, inclination changes are handled through aerobraking, or if that isn\'t possible, using a polar orbit to change inclination from the body with the highest orbit. Perfection is not possible unless the planet intersects the ascending or descending node.</string>
 
     <string-array name="titles">
