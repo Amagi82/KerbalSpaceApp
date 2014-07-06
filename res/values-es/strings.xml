@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="about">Acerca de</string>
+    <string name="action_atmosphere"> Atmósfera </string>
+    <string name="action_biomes"> Biomas </string>
+    <string name="action_delete"> Eliminar </string>
+    <string name="action_help">Ayuda</string>
+    <string name="action_load">Cargar </string>
+    <string name="action_new"> Nuevo </string>
+    <string name="action_save"> Guardar </string>
+    <string name="action_settings"> Configuración </string>
+    <string name="action_topography"> Topografía </string>
+    <string name="add"> Añadir </string>
+    <string name="app_name"> Aplicación Kerbal Espacio </string>
+    <string name="average"> Media </string>
+    <string name="best_case"> Mejor de los casos </string>
+    <string name="cancel"> Cancelar </string>
+    <string name="celestial_body"> Cuerpo celeste </string>
+    <string name="celestial_moon"> Moon </string>
+    <string name="clearance"> Liquidación de superficie </string>
+    <string name="destination_add"> Nuevo destino </string>
+    <string name="destination_cancel"> Nuevo destino </string>
+    <string name="destination_title"> Nuevo destino </string>
+    <string name="dismiss"> Descartar </string>
+    <string name="drawer_close"> Cerrar cajón de navegación </string>
+    <string name="drawer_open"> Abra el cajón de navegación </string>
+    <string name="efficient"> eficiente </string>
+    <string name="feedback">Comentarios</string>
+    <string name="help"> Ayuda </string>
+    <string name="inclination_efficiency"> Eficiencia inclinación </string>
+    <string name="inefficient"> ineficiente </string>
+    <string name="land"> Aterrizar? </string>
+    <string name="landing">Aterrizaje: </string>
+    <string name="landing_site"> Punto de aterrizaje</string>
+    <string name="orbit"> Orbit </string>
+    <string name="planet"> Planeta </string>
+    <string name="safety_margins">Márgenes de seguridad ΔV</string>
+    <string name="takeoff">Despegue: </string>
+    <string name="title_activity_mission_planner"> Planner Misión </string>
+    <string name="title_activity_settings"> Configuración </string>
+    <string name="title_missionDestination"> Elija destino </string>
+    <string name="total_delta_v"> Total ΔV </string>
+    <string name="transfer">Transferencia: </string>
+    <string name="utilities">Utilidades</string>
+    <string name="worst_case"> Peor de los casos </string>
+    <string name="kerbol_description"> Kerbol es la estrella central del sistema Kerbol. Tiene siete hijos conocidos: Los planetas Moho, Eve, Kerbin, Duna y Jool, y dos planetas enanos Dres y Eeloo. </string>
+    <string name="moho_description"> Moho es el planeta más interior del sistema estelar Kerbol, y el análogo Mercury para KSP. A partir de 0.18, ya no es anclaje mareal a Kerbol. </string>
+    <string name="eve_description"> Eva es el segundo planeta desde Kerbol, y el análogo Venus para KSP. Cuenta con una pequeña luna: Un asteroide capturado llamado Gilly.</string>
+    <string name="gilly_description"> Gilly es un pequeño asteroide, el único satélite natural de la víspera, y el cuerpo celeste más pequeño del sistema Kerbol. </string>
+    <string name="kerbin_description"> Kerbin es el planeta de origen de la Kerbals, la ubicación del Centro Espacial, y el análogo de la Tierra para KSP. Tiene dos lunas, Mun y Minmus. </string>
+    <string name="mun_description"> Mün es la luna relativamente grande que orbita más cerca de Kerbin, un análogo a nuestra propia Luna. </string>
+    <string name="minmus_description"> Minmus es la luna más pequeña y más lejana de Kerbin. </string>
+    <string name="duna_description"> Duna es el cuarto planeta desde Kerbol y análogo de Marte para KSP. Es en su mayoría de color rojo con capas de hielo polar y tiene un satélite natural, Ike. El tamaño y la proximidad de Ike mareas cerraduras y Duna entre sí. </string>
+    <string name="ike_description"> Ike es una luna y el único satélite natural de la Duna. Ike y Duna son anclaje mareal, debido a su proximidad y tamaño de Ike. </string>
+    <string name="dres_description"> Dres es un planeta enano, quinto de Kerbol. Se encuentra entre Duna y Jool en una órbita ligeramente excéntrica e inclinada. Dres tiene la menor gravedad de cualquier planeta del sistema Kerbol. </string>
+    <string name="jool_description"> Jool es un gigante de gas y el sexto planeta desde Kerbol, y el análogo de Júpiter por KSP. Aparte de Kerbol, Jool tiene el mayor diámetro y mayor masa de todos los cuerpos celestes. Cuenta con un sistema grande y complejo de cinco lunas: Laythe, Vall, Tylo, Bop, y Pol.</string>
+    <string name="laythe_description"> Laythe es la luna más cercana a Jool. Aunque en su mayoría cubierto de mares, Laythe tiene numerosas islas arenosas, rocosas. Laythe está anclaje mareal Jool. </string>
+    <string name="vall_description"> Vall es la segunda luna de Jool. Vall anclaje mareal, y un análogo de la luna Europa de Júpiter. </string>
+    <string name="tylo_description"> Tylo es tercera luna de Jool. Es la luna más grande de KSP, y el mayor cuerpo celeste sin atmósfera. Es análogo de KSP para la luna Ganímedes de Júpiter. </string>
+    <string name="bop_description"> Bop es cuarta luna de Jool. Se trata de un asteroide capturado similar a Gilly. Algunos de sus montañas se levantan cerca de 22 kilómetros de la superficie, por lo que es peligroso para orbitar cerca. </string>
+    <string name="pol_description"> Pol es luna quinto y más pequeño de Jool. Pol tiene la gravedad en la superficie de segundo más bajo en el sistema Kerbol después de Gilly. </string>
+    <string name="eeloo_description"> Eeloo es un planeta enano de hielo, más alejado Kerbol. Su órbita se cruza Jool de, pero en una resonancia 3:2, la cual, junto con sus diferentes inclinaciones, asegura que no pueden colisionar. Podría considerarse el análogo Plutón de KSP. </string>
+    <string name="version"> \n \nAutor: Amagi82 \n \n No estoy afiliado con el Programa Kerbal Space. Me encanta KSP y quiero devolver algo a la comunidad. Si desea ponerse en contacto conmigo por cualquier motivo, haga clic en Comentarios. </string>
+    <string name="help_clearance"> Cero liquidación superficie supone un ascenso perfecto, apenas despejar la atmósfera o la montaña más alta. Añadir aclaramiento de superficie para una órbita más alta. Tenga en cuenta que una órbita más alta también aumentará requisitos delta V para llegar a otros planetas. Se supone órbitas circulares. </string>
+    <string name="help_margins"> Porcentaje de delta V adicional para dar cuenta de un error humano. 0\%% sería los requisitos mínimos posibles para una maniobra perfecta. El valor predeterminado es 10\%%. </string>
+    <string name="help_inclination"> Mejores situación caso, los cambios de inclinación se manejan a través de aerofrenado, o si esto no es posible, el uso de una órbita polar para cambiar la inclinación del cuerpo, con la órbita más alta. La perfección no es posible a menos que el planeta cruza con el ascendente o nodo descendente. </string>
+
+    <string-array name="titles">
+        <item>Características orbitales</item>
+        <item>Características físicas</item>
+        <item>Características de la Atmósfera</item>
+        <item>Multiplicadores de Ciencias</item>
+        <item>Delta-V</item>
+        <item>Ángulos de salida de fase</item>
+    </string-array>
+    <string-array name="orbital_categories">
+        <item>Semieje mayor</item>
+        <item>Apoastro</item>
+        <item>Periastro</item>
+        <item>Excentricidad orbital</item>
+        <item>Inclinación orbital</item>
+        <item>Argumento del periastro</item>
+        <item>Longitud del nodo subiendo</item>
+        <item>Anomalía media</item>
+        <item>Período orbital</item>
+        <item>Sinódico período orbital</item>
+        <item>Velocidad orbital</item>
+    </string-array>
+    <string-array name="orbital_descriptions">
+        <item>El semieje mayor es el promedio de la apoapsis y periapsis, y se puede utilizar para calcular el periodo orbital.</item>
+        <item>Apoastro es el punto más alto en una órbita de la empresa matriz.</item>
+        <item>Periastro es el punto más bajo en una órbita de la empresa matriz.</item>
+        <item>Excentricidad orbital es lo cerca que la órbita es un círculo perfecto. 0 es circular, 1 es una órbita de escape parabólica, y >1 es una hipérbola.</item>
+        <item>Inclinación orbital es el ángulo entre el plano de la órbita y el plano ecuatorial de la casa matriz. 0° C es el mismo plano, 90° es una órbita polar, y 180° es una órbita ecuatorial retrógrada.</item>
+        <item>Argumento del periastro es el ángulo entre el perigeo y el nodo ascendente, medido en el plano orbital en la dirección del movimiento.</item>
+        <item>Longitud del nodo subiendo es el ángulo de una dirección de referencia, llamado el origen de la longitud, a la dirección del nodo ascendente, medido en un plano de referencia.</item>
+        <item>La anomalía media</item>
+        <item>Período orbital es de un año completo, desde un punto de referencia de las estrellas.</item>
+        <item>Sinódico período orbital</item>
+        <item>Velocidad orbital</item>
+    </string-array>
+    <string-array name="physical_categories">
+        <item>Radios del ecuador</item>
+        <item>Área de superficies</item>
+        <item>Masa</item>
+        <item>Parámetro gravitacional estándar</item>
+        <item>Densidad</item>
+        <item>Gravedad superficie</item>
+        <item>Velocidad de escape</item>
+        <item>Sidéreo periodo de rotación</item>
+        <item>Día de sol</item>
+        <item>Sidéreo velocidad rotacional</item>
+        <item>Órbita síncrona</item>
+        <item>Esfera de influencia</item>
+        <item>La más alta elevación</item>
+    </string-array>
+    <string-array name="atmosphere_categories">
+        <item>Presión atmosférica</item>
+        <item>Altura escala</item>
+        <item>Altura atmosférica</item>
+        <item>Temperatura mínimo</item>
+        <item>Temperatura máxima</item>
+        <item>Oxígeno presente</item>
+    </string-array>
+    <string-array name="science_multiplier">
+        <item>Superficie</item>
+        <item>Atmosférico</item>
+        <item>Espacio</item>
+    </string-array>
+    <string-array name="delta_v">
+        <item>Para llegar a la órbita</item>
+        <item>Moho</item>
+        <item>Eve</item>
+        <item>Gilly</item>
+        <item>Kerbin</item>
+        <item>Mun</item>
+        <item>Minmus</item>
+        <item>Duna</item>
+        <item>Ike</item>
+        <item>Dres</item>
+        <item>Jool</item>
+        <item>Laythe</item>
+        <item>Vall</item>
+        <item>Tylo</item>
+        <item>Bop</item>
+        <item>Pol</item>
+        <item>Eeloo</item>
+    </string-array>
+    <string-array name="help_descriptions">
+        <item>Liquidación de superficie</item>
+        <item>Márgenes Delta V de seguridad</item>
+        <item>Eficiencia de inclinación</item>
+    </string-array>
+    <string-array name="icon_descriptions">
+        <item>La tierra y el despegue</item>
+        <item>Tierra</item>
+        <item>Órbita</item>
+        <item>Despegar</item>
+    </string-array>
+
+</resources>

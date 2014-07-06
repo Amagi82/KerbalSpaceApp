@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="about">Über</string>
+    <string name="action_atmosphere">Atmosphäre</string>
+    <string name="action_biomes">Biome</string>
+    <string name="action_delete">Löschen</string>
+    <string name="action_help">Hilfe</string>
+    <string name="action_load">Last</string>
+    <string name="action_new">Neu</string>
+    <string name="action_save">Sparen</string>
+    <string name="action_settings">Einstellungen</string>
+    <string name="action_topography">Topographie</string>
+    <string name="add">Hinzufügen</string>
+    <string name="app_name">Kerbal Raum Anwendung</string>
+    <string name="average">Durchschnitt</string>
+    <string name="best_case">Im besten Fall</string>
+    <string name="cancel">Stornieren</string>
+    <string name="celestial_body">Himmelskörper</string>
+    <string name="celestial_moon">Mond</string>
+    <string name="clearance">Oberflächenräumungs</string>
+    <string name="destination_add">Neues Ziel</string>
+    <string name="destination_cancel">Neues Ziel</string>
+    <string name="destination_title">Neues Ziel</string>
+    <string name="dismiss">Entlassen</string>
+    <string name="drawer_close">Schließen Navigation Schublade</string>
+    <string name="drawer_open">Öffnen Navigation Schublade</string>
+    <string name="efficient">Effizient</string>
+    <string name="feedback">Feedback</string>
+    <string name="help">Hilfe</string>
+    <string name="inclination_efficiency">Neigungs-Effizienz</string>
+    <string name="inefficient">Ineffizient</string>
+    <string name="land">Land?</string>
+    <string name="landing">Landung: </string>
+    <string name="landing_site">Landeplatz</string>
+    <string name="orbit">Orbit</string>
+    <string name="planet">Planet</string>
+    <string name="safety_margins">ΔV Sicherheitsränder</string>
+    <string name="takeoff">Takeoff: </string>
+    <string name="title_activity_mission_planner">Mission Planer</string>
+    <string name="title_activity_settings">Einstellungen</string>
+    <string name="title_missionDestination">Wählen Sie Ziel</string>
+    <string name="total_delta_v">ΔV insgesamt</string>
+    <string name="transfer">Überweisung: </string>
+    <string name="utilities">Dienstprogramme</string>
+    <string name="worst_case">Im schlimmsten fall</string>
+    <string name="kerbol_description">Kerbol ist der Zentralstern des Kerbol-System. Es hat sieben bekannten Kinder: die Planeten Moho, Eve, Kerbin, Duna und Jool und zwei Zwergplaneten und Dres und Eeloo.</string>
+    <string name="moho_description">Moho ist der innerste Planet des Kerbol Sterne-System, und die Mercury Analogon für KSP. Wie von 0,18, ist es nicht mehr zu Kerbol Gezeitenkräfte gesperrt.</string>
+    <string name="eve_description">Eve ist der zweite Planet von Kerbol und die Venus Analogon für KSP. Es hat einen kleinen Mond: ein eingefangener Asteroid namens Gilly.</string>
+    <string name="gilly_description">Gilly ist ein winziger Asteroid, der einzige natürliche Satellit der Eva, und der kleinste Himmelskörper in der Kerbol System.</string>
+    <string name="kerbin_description">Kerbin ist der Heimatplanet der Kerbals, dem Ort des Space Center, und die Erde für analoge KSP. Es hat zwei Monde, Mun und Minmus.</string>
+    <string name="mun_description">Mün ist die relativ große Mond umkreist am nächsten Kerbin, einem analogen, unsere eigenen Mond.</string>
+    <string name="minmus_description">Minmus ist die kleinere und weiter entfernten Mond Kerbin.</string>
+    <string name="duna_description">Duna ist der vierte Planet von Kerbol und Mars Analog KSP. Es ist meist rot mit polaren Eiskappen und hat einen natürlichen Satelliten, Ike. Ike Größe und Nähe Gezeitenkräfte verriegelt und Duna zueinander.</string>
+    <string name="ike_description">Ike ist ein Mond und der einzige natürliche Satellit der Duna. Ike und Duna sind Gezeitenkräfte aufgrund ihrer Nähe und Ike Größe verriegelt.</string>
+    <string name="dres_description">Dres ist ein Zwergplanet, fünfter von Kerbol. Es befindet sich zwischen Duna und Jool in einer etwas exzentrischen und geneigten Umlaufbahn befindet. Dres hat die geringste Dichte von jedem Planeten in der Kerbol System.</string>
+    <string name="jool_description">Jool ist ein Gasriese und der sechste Planet von Kerbol und der Jupiter analogen KSP. Abgesehen von Kerbol hat Jool den größten Durchmesser und größte Masse aller Himmelskörper. Es hat ein großes und komplexes System von fünf Monde: Laythe, Vall, Tylo, Bop und Pol.</string>
+    <string name="laythe_description">Laythe am nächsten Mond Jool. Obwohl meist in Meeren bedeckt, hat Laythe zahlreiche Fels-, Sand-Inseln. Laythe ist Gezeitenkräfte zu Jool gesperrt.</string>
+    <string name="vall_description">Vall ist der zweite Mond Jool. Vall ist gebundene Rotation, und ein Analog Jupitermond Europa.</string>
+    <string name="tylo_description">Tylo ist Jool dritte Mond. Es ist der größte Mond im KSP und die größte Himmelskörper ohne Atmosphäre. Es ist KSP analogen zum Jupitermond Ganymed.</string>
+    <string name="bop_description">Bop ist Jool vierten Mond. Es ist ein eingefangener Asteroid ähnlich Gilly. Einige der Berge steigen fast 22 km über der Oberfläche, so dass es gefährlich eng umkreisen.</string>
+    <string name="pol_description">Pol ist fünften und kleinsten Mond Jool ist. Pol hat die zweitniedrigste Oberflächenschwerkraft in der Kerbol System nach Gilly.</string>
+    <string name="eeloo_description">Eeloo ist eine eisige Zwergplaneten, die am weitesten von Kerbol. Seine Bahn schneidet Jool, sondern in einem 3:2-Resonanz, die mit ihren unterschiedlichen Neigungen verbunden ist, gewährleistet sie nicht miteinander kollidieren können. Es könnte als der Pluto-Analogon von KSP werden.</string>
+    <string name="version">\n\nAutor: Amagi82\n\nIch bin nicht mit Kerbal Raumprogramm angeschlossen. Ich liebe es einfach KSP und wollen an die Gemeinde zurück zu geben. Wenn Sie möchten, mich aus irgendeinem Grund kontaktieren, klicken Sie auf Feedback bekommen.</string>
+    <string name="help_clearance">Zero-Oberfläche Abstand nimmt eine perfekte Aufstieg, kaum Löschen der Atmosphäre oder der höchste Berg. In Fläche Freiraum für eine höhere Umlaufbahn. Beachten Sie, dass eine höhere Umlaufbahn erhöht auch Delta-V Anforderungen auf andere Planeten zu erreichen. Kreisbahnen werden vorausgesetzt.</string>
+    <string name="help_margins">Prozentualer Anteil der zusätzlichen Delta V für menschliche Fehler zu berücksichtigen. 0\%% würden die minimal mögliche Anforderungen für eine perfekte Manöver sein. Der Standardwert ist 10\%%.</string>
+    <string name="help_inclination">Im besten Fall Situation Neigungsänderungen Werden DURCH Aerobraking gehandhabt WIRD, WENN oder das. Nicht Versand möglich Ist, mit Einer Polaren Umlaufbahn der Neigung Aus dem Korper mit der Höchsten Umlaufbahn language. Perfektion Seite ist nicht Versand möglich, es sei DENN der Planet schneidet absteigenden Knoten sterben oder aufsteigenden.</string>
+
+    <string-array name="titles">
+        <item>Orbital Eigenschaften</item>
+        <item>Physikalische Eigenschaften</item>
+        <item>Atmosphärische Eigenschaften</item>
+        <item>Wissenschaft Multiplikatoren</item>
+        <item>Delta-V</item>
+        <item>Abfahrt Phasenwinkel</item>
+    </string-array>
+    <string-array name="orbital_categories">
+        <item>Große halbachse</item>
+        <item>Apoapsis</item>
+        <item>Periapsis</item>
+        <item>Exzentrizität</item>
+        <item>Bahnneigung</item>
+        <item>Argument der periapsis</item>
+        <item>Argument des knotens</item>
+        <item>Mittlere anomalie</item>
+        <item>Siderische umlaufzeit</item>
+        <item>Synodische umlaufzeit</item>
+        <item>Bahngeschwindigkeit</item>
+    </string-array>
+    <string-array name="physical_categories">
+        <item>Äquatorialradius</item>
+        <item>Oberfläche</item>
+        <item>Masse</item>
+        <item>Gravitationsparamter</item>
+        <item>Dichte</item>
+        <item>Oberflächenschwerkraft</item>
+        <item>Fluchtgeschwindigkeit</item>
+        <item>Siderischer tag</item>
+        <item>Sonnentag</item>
+        <item>Rotations­geschwindig­keit</item>
+        <item>Synchrone umlaufbahn</item>
+        <item>Einflussbereich</item>
+        <item>Höchste erhebung </item>
+    </string-array>
+    <string-array name="atmosphere_categories">
+        <item>Atmosphärendruck</item>
+        <item>Skalenhöhe</item>
+        <item>Atmosphärischer höhe</item>
+        <item>Lufttemperatur min</item>
+        <item>Lufttemperatur max</item>
+        <item>Sauerstoff</item>
+    </string-array>
+    <string-array name="science_multiplier">
+        <item>Oberfläche</item>
+        <item>Atmosphärisch</item>
+        <item>Weltraum </item>
+    </string-array>
+    <string-array name="delta_v">
+        <item>Um Umlaufbahn erreicht</item>
+        <item>Moho</item>
+        <item>Eve</item>
+        <item>Gilly</item>
+        <item>Kerbin</item>
+        <item>Mun</item>
+        <item>Minmus</item>
+        <item>Duna</item>
+        <item>Ike</item>
+        <item>Dres</item>
+        <item>Jool</item>
+        <item>Laythe</item>
+        <item>Vall</item>
+        <item>Tylo</item>
+        <item>Bop</item>
+        <item>Pol</item>
+        <item>Eeloo</item>
+    </string-array>
+    <string-array name="help_descriptions">
+        <item>Oberflächenräumungs</item>
+        <item>Delta V Sicherheitsränder</item>
+        <item>Neigungs-Effizienz</item>
+    </string-array>
+    <string-array name="icon_descriptions">
+        <item>Land-und ausziehen</item>
+        <item>Land</item>
+        <item>Orbit</item>
+        <item>Ausziehen</item>
+    </string-array>
+
+</resources>
