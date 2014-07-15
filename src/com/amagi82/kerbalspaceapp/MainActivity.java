@@ -21,10 +21,12 @@ package com.amagi82.kerbalspaceapp;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.pm.PackageManager.NameNotFoundException;
 import android.content.res.Configuration;
 import android.net.Uri;
@@ -43,8 +45,6 @@ public class MainActivity extends Activity {
 	private DrawerLayout mDrawerLayout;
 	private ListView mDrawerList;
 	private ActionBarDrawerToggle mDrawerToggle;
-	private CharSequence mDrawerTitle;
-	private CharSequence mTitle;
 	private String version;
 	NavigationDrawerAdapter adapter;
 	List<NavigationDrawerItem> dataList;
@@ -56,8 +56,11 @@ public class MainActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 
+		SharedPreferences prefs = getSharedPreferences("settings", MODE_PRIVATE);
+		if (prefs.getInt("language", 0) != 0)
+			Settings.language = Settings.langCode[prefs.getInt("language", 0)];
+
 		dataList = new ArrayList<NavigationDrawerItem>();
-		mTitle = mDrawerTitle = getTitle();
 		mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
 		mDrawerList = (ListView) findViewById(R.id.left_drawer);
 
@@ -88,18 +91,17 @@ public class MainActivity extends Activity {
 		// Enable ActionBar app icon to behave as action to toggle nav drawer
 		getActionBar().setDisplayHomeAsUpEnabled(true);
 		getActionBar().setHomeButtonEnabled(true);
+		getActionBar().setTitle(R.string.app_name);
 
 		// ActionBarDrawerToggle ties together the interactions between the sliding drawer and the action bar app icon
 		mDrawerToggle = new ActionBarDrawerToggle(this, mDrawerLayout, R.drawable.ic_drawer, R.string.drawer_open, R.string.drawer_close) {
 			@Override
 			public void onDrawerClosed(View view) {
-				getActionBar().setTitle(mTitle);
 				invalidateOptionsMenu(); // Creates call to onPrepareOptionsMenu()
 			}
 
 			@Override
 			public void onDrawerOpened(View drawerView) {
-				getActionBar().setTitle(mDrawerTitle);
 				invalidateOptionsMenu(); // Creates call to onPrepareOptionsMenu()
 			}
 		};
@@ -165,12 +167,6 @@ public class MainActivity extends Activity {
 	}
 
 	@Override
-	public void setTitle(CharSequence title) {
-		mTitle = title;
-		getActionBar().setTitle(mTitle);
-	}
-
-	@Override
 	protected void onPostCreate(Bundle savedInstanceState) {
 		super.onPostCreate(savedInstanceState);
 		// Sync the toggle state after onRestoreInstanceState has occurred.
@@ -178,10 +174,18 @@ public class MainActivity extends Activity {
 	}
 
 	@Override
-	public void onConfigurationChanged(Configuration newConfig) {
-		super.onConfigurationChanged(newConfig);
+	public void onConfigurationChanged(Configuration config) {
+		super.onConfigurationChanged(config);
 		// Pass any configuration change to the drawer toggle
-		mDrawerToggle.onConfigurationChanged(newConfig);
+		mDrawerToggle.onConfigurationChanged(config);
+		if (Settings.language == null) {
+			Settings.language = Locale.getDefault();
+		} else if (!config.locale.equals(Settings.language) && !Locale.getDefault().equals(Settings.language)) {
+			config.locale = Settings.language;
+			Locale.setDefault(config.locale);
+			getBaseContext().getResources().updateConfiguration(config, getResources().getDisplayMetrics());
+			recreate();
+		}
 	}
 
 	// The click listener for the ListView in the navigation drawer

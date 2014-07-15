@@ -19,8 +19,10 @@
 
 package com.amagi82.kerbalspaceapp;
 
+import java.text.NumberFormat;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Locale;
 
 import android.app.Activity;
 import android.view.LayoutInflater;
@@ -164,25 +166,25 @@ public class StableArrayAdapter extends ArrayAdapter<MissionData> {
 		if (transferDeltaV == 0) {
 			viewHolder.tvDeltaVData1.setVisibility(View.INVISIBLE);
 		} else {
-			viewHolder.tvDeltaVData1.setText(context.getString(R.string.transfer) + " " + transferDeltaV + "m/s");
+			viewHolder.tvDeltaVData1.setText(context.getString(R.string.transfer) + " " + formatNumber(transferDeltaV) + "m/s");
 			viewHolder.tvDeltaVData1.setVisibility(View.VISIBLE);
 		}
 		if (landingDeltaV == 0) {
 			viewHolder.tvDeltaVData2.setVisibility(View.INVISIBLE);
 		} else {
-			viewHolder.tvDeltaVData2.setText(context.getString(R.string.landing) + " " + landingDeltaV + "m/s");
+			viewHolder.tvDeltaVData2.setText(context.getString(R.string.landing) + " " + formatNumber(landingDeltaV) + "m/s");
 			viewHolder.tvDeltaVData2.setVisibility(View.VISIBLE);
 		}
 		if (takeoffDeltaV == 0) {
 			viewHolder.tvDeltaVData3.setVisibility(View.INVISIBLE);
 		} else {
-			viewHolder.tvDeltaVData3.setText(context.getString(R.string.takeoff) + " " + takeoffDeltaV + "m/s");
+			viewHolder.tvDeltaVData3.setText(context.getString(R.string.takeoff) + " " + formatNumber(takeoffDeltaV) + "m/s");
 			viewHolder.tvDeltaVData3.setVisibility(View.VISIBLE);
 		}
 
 		// Totals and displays the deltaV for each mission destination
 		totalDeltaV = takeoffDeltaV + transferDeltaV + landingDeltaV;
-		viewHolder.tvDeltaVSum.setText(totalDeltaV + "m/s");
+		viewHolder.tvDeltaVSum.setText(formatNumber(totalDeltaV) + "m/s");
 		viewHolder.imageLandingStatus.setImageResource(resId);
 
 		// If the user entered an orbit of 0, replace it with the minimum orbit
@@ -195,5 +197,10 @@ public class StableArrayAdapter extends ArrayAdapter<MissionData> {
 		convertView.setOnTouchListener(mTouchListener);
 
 		return convertView;
+	}
+
+	private String formatNumber(int number) {
+		String value = NumberFormat.getNumberInstance(Locale.getDefault()).format(number);
+		return value;
 	}
 }

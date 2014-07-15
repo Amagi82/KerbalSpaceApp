@@ -26,8 +26,10 @@ import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.OptionalDataException;
+import java.text.NumberFormat;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Locale;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -35,6 +37,7 @@ import android.app.ActionBar;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.res.Configuration;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
@@ -170,7 +173,8 @@ public class MissionPlanner extends Activity {
 			}
 			totalDeltaV = totalDeltaV + takeoffDeltaV + transferDeltaV + landingDeltaV;
 		}
-		tvTotalDeltaV.setText(totalDeltaV + " m/s");
+		String value = NumberFormat.getNumberInstance(Locale.getDefault()).format(totalDeltaV);
+		tvTotalDeltaV.setText(value + " m/s");
 	}
 
 	// Save missionData on pause
@@ -448,6 +452,19 @@ public class MissionPlanner extends Activity {
 			break;
 		}
 		return super.onOptionsItemSelected(item);
+	}
+
+	@Override
+	public void onConfigurationChanged(Configuration config) {
+		super.onConfigurationChanged(config);
+		if (Settings.language == null) {
+			Settings.language = Locale.getDefault();
+		} else if (!config.locale.equals(Settings.language) && !Locale.getDefault().equals(Settings.language)) {
+			config.locale = Settings.language;
+			Locale.setDefault(config.locale);
+			getBaseContext().getResources().updateConfiguration(config, getResources().getDisplayMetrics());
+			recreate();
+		}
 	}
 
 	// Grab the parcel from MissionDestination, and either add a new listview item or update an existing one

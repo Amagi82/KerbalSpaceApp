@@ -24,10 +24,12 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Locale;
 
 import android.app.ActionBar;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -60,6 +62,7 @@ public class CelestialBodyActivity extends FragmentActivity {
 		ActionBar actionBar = getActionBar();
 		actionBar.setDisplayHomeAsUpEnabled(true);
 		actionBar.setDisplayShowTitleEnabled(true);
+		actionBar.setTitle(R.string.app_name);
 
 		mSectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());
 
@@ -144,6 +147,19 @@ public class CelestialBodyActivity extends FragmentActivity {
 			break;
 		}
 		return true;
+	}
+
+	@Override
+	public void onConfigurationChanged(Configuration config) {
+		super.onConfigurationChanged(config);
+		if (Settings.language == null) {
+			Settings.language = Locale.getDefault();
+		} else if (!config.locale.equals(Settings.language) && !Locale.getDefault().equals(Settings.language)) {
+			config.locale = Settings.language;
+			Locale.setDefault(config.locale);
+			getBaseContext().getResources().updateConfiguration(config, getResources().getDisplayMetrics());
+			recreate();
+		}
 	}
 
 	public class SectionsPagerAdapter extends FragmentStatePagerAdapter {

@@ -19,17 +19,26 @@
 
 package com.amagi82.kerbalspaceapp;
 
+import java.text.NumberFormat;
+import java.util.Locale;
+
 import android.app.ActionBar;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.SharedPreferences;
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.v4.app.NavUtils;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemSelectedListener;
+import android.widget.ArrayAdapter;
 import android.widget.SeekBar;
 import android.widget.SeekBar.OnSeekBarChangeListener;
+import android.widget.Spinner;
 import android.widget.TextView;
 
 public class Settings extends Activity {
@@ -40,6 +49,10 @@ public class Settings extends Activity {
 
 	int mClearanceValue, mMarginsValue, mInclinationValue;
 	TextView mClearance, mMargins, mInclination;
+	static Locale language;
+	static Locale spanish = new Locale("es");
+	static Locale[] langCode = { Locale.ENGLISH, Locale.FRENCH, Locale.GERMAN, spanish };
+	Spinner chooseLanguage;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -51,17 +64,30 @@ public class Settings extends Activity {
 		actionBar.setDisplayShowTitleEnabled(true);
 		getActionBar().setTitle(R.string.title_activity_settings);
 
-		SharedPreferences prefs = getSharedPreferences("settings", MODE_PRIVATE);
-		mClearanceValue = prefs.getInt("mClearanceValue", 1000);
-		mMarginsValue = prefs.getInt("mMarginsValue", 10);
-		mInclinationValue = prefs.getInt("mInclinationValue", 30);
-
 		SeekBar clearance = (SeekBar) findViewById(R.id.seekBarClearance);
 		SeekBar margins = (SeekBar) findViewById(R.id.seekBarMargins);
 		SeekBar inclination = (SeekBar) findViewById(R.id.seekBarInclination);
 		mClearance = (TextView) findViewById(R.id.tvClearance);
 		mMargins = (TextView) findViewById(R.id.tvMargins);
 		mInclination = (TextView) findViewById(R.id.tvInclination);
+		chooseLanguage = (Spinner) findViewById(R.id.spinnerLanguages);
+
+		SharedPreferences prefs = getSharedPreferences("settings", MODE_PRIVATE);
+		mClearanceValue = prefs.getInt("mClearanceValue", 1000);
+		mMarginsValue = prefs.getInt("mMarginsValue", 10);
+		mInclinationValue = prefs.getInt("mInclinationValue", 30);
+		chooseLanguage.setSelection(prefs.getInt("language", 0));
+
+		// Set up spinner
+		ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(getActionBar().getThemedContext(), R.array.languages,
+				android.R.layout.simple_spinner_item);
+		adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+		chooseLanguage.setAdapter(adapter);
+		// @formatter:off
+		if (Locale.getDefault().getLanguage().equals("en"))chooseLanguage.setSelection(0);
+		if (Locale.getDefault().getLanguage().equals("fr"))chooseLanguage.setSelection(1);
+		if (Locale.getDefault().getLanguage().equals("de"))chooseLanguage.setSelection(2);
+		if (Locale.getDefault().getLanguage().equals("es"))chooseLanguage.setSelection(3);
 
 		// Set seekbar progress
 		clearance.setProgress(mClearanceValue);
@@ -76,7 +102,8 @@ public class Settings extends Activity {
 		clearance.setOnSeekBarChangeListener(new OnSeekBarChangeListener() {
 			@Override
 			public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-				mClearance.setText(progress + "m");
+				String value = NumberFormat.getNumberInstance(Locale.getDefault()).format(progress);
+				mClearance.setText(value + "m");
 				mClearanceValue = progress;
 			}
 
@@ -116,6 +143,18 @@ public class Settings extends Activity {
 
 			@Override
 			public void onStopTrackingTouch(SeekBar seekBar) {
+			}
+		});
+		chooseLanguage.setOnItemSelectedListener(new OnItemSelectedListener() {
+
+			@Override
+			public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+				language = langCode[chooseLanguage.getSelectedItemPosition()];
+				onConfigurationChanged(getResources().getConfiguration());
+			}
+
+			@Override
+			public void onNothingSelected(AdapterView<?> parent) {
 			}
 		});
 
@@ -173,6 +212,19 @@ public class Settings extends Activity {
 		return true;
 	}
 
+	@Override
+	public void onConfigurationChanged(Configuration config) {
+		super.onConfigurationChanged(config);
+		if (language == null) {
+			language = Locale.getDefault();
+		} else if (!config.locale.equals(language) && !Locale.getDefault().equals(language)) {
+			config.locale = language;
+			Locale.setDefault(config.locale);
+			getBaseContext().getResources().updateConfiguration(config, getResources().getDisplayMetrics());
+			recreate();
+		}
+	}
+
 	// Save the values onPause
 	@Override
 	protected void onPause() {
@@ -181,6 +233,7 @@ public class Settings extends Activity {
 		editor.putInt("mClearanceValue", mClearanceValue);
 		editor.putInt("mMarginsValue", mMarginsValue);
 		editor.putInt("mInclinationValue", mInclinationValue);
+		editor.putInt("language", chooseLanguage.getSelectedItemPosition());
 		editor.commit();
 	}
 }

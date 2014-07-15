@@ -19,6 +19,9 @@
 
 package com.amagi82.kerbalspaceapp;
 
+import java.text.NumberFormat;
+import java.util.Locale;
+
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -195,7 +198,8 @@ public class MissionDestination extends Activity {
 		landingAltitude.setOnSeekBarChangeListener(new OnSeekBarChangeListener() {
 			@Override
 			public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-				mLandingAltitude.setText(progress + "m");
+				String value = NumberFormat.getNumberInstance(Locale.getDefault()).format(progress);
+				mLandingAltitude.setText(value + "m");
 				mLandingAltitudeValue = progress;
 			}
 
@@ -220,7 +224,8 @@ public class MissionDestination extends Activity {
 						+ OrbitalMechanics.minOrbit[mPlanetId];
 				// The average produces the desired rate of increase
 				x = (x + y) / 2;
-				mOrbitAltitude.setText((int) x + "m");
+				String value = NumberFormat.getNumberInstance(Locale.getDefault()).format((int) x);
+				mOrbitAltitude.setText(value + "m");
 				mOrbitAltitudeValue = (int) x;
 			}
 
@@ -232,6 +237,19 @@ public class MissionDestination extends Activity {
 			public void onStopTrackingTouch(SeekBar seekBar) {
 			}
 		});
+	}
+
+	@Override
+	public void onConfigurationChanged(Configuration config) {
+		super.onConfigurationChanged(config);
+		if (Settings.language == null) {
+			Settings.language = Locale.getDefault();
+		} else if (!config.locale.equals(Settings.language) && !Locale.getDefault().equals(Settings.language)) {
+			config.locale = Settings.language;
+			Locale.setDefault(config.locale);
+			getBaseContext().getResources().updateConfiguration(config, getResources().getDisplayMetrics());
+			recreate();
+		}
 	}
 
 	// Limits iconStatus options to what is possible

@@ -94,4 +94,22 @@
         android:layout_alignRight="@+id/seekBarInclination"
         android:textColor="#fff" />
 
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/seekBarInclination"
+        android:layout_marginTop="15dp"
+        android:text="@string/force_language"
+        android:textColor="#fff" />
+
+    <Spinner
+        android:id="@+id/spinnerLanguages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView3"
+        android:popupBackground="#222" />
+
 </RelativeLayout>

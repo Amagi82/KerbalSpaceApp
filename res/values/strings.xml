@@ -27,6 +27,7 @@
     <string name="drawer_open">Open navigation drawer</string>
     <string name="efficient">Efficient</string>
     <string name="feedback">Feedback</string>
+    <string name="force_language">Language</string>
     <string name="help">Help</string>
     <string name="inclination_efficiency">Inclination Efficiency</string>
     <string name="inefficient">Inefficient</string>
@@ -84,6 +85,12 @@
     <string name="help_margins">Percentage of extra delta V to account for human error. 0\%% would be the minimum possible requirements for a perfect maneuver. Default is 10\%%.</string>
     <string name="help_inclination">Best case situation, inclination changes are handled through aerobraking, or if that isn\'t possible, using a polar orbit to change inclination from the body with the highest orbit. Perfection is not possible unless the planet intersects the ascending or descending node.</string>
 
+    <string-array name="languages">
+        <item>English</item>
+        <item>Français</item>
+        <item>Deutsch</item>
+        <item>Español</item>
+    </string-array>
     <string-array name="titles">
         <item>Orbital Characteristics</item>
         <item>Physical Characteristics</item>
