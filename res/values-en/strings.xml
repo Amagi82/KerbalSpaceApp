@@ -19,9 +19,6 @@
     <string name="celestial_body">Celestial Body</string>
     <string name="celestial_moon">Moon</string>
     <string name="clearance">Surface Clearance</string>
-    <string name="destination_add">New Destination</string>
-    <string name="destination_cancel">New Destination</string>
-    <string name="destination_title">New Destination</string>
     <string name="dismiss">Dismiss</string>
     <string name="drawer_close">Close navigation drawer</string>
     <string name="drawer_open">Open navigation drawer</string>

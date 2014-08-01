@@ -19,6 +19,7 @@
 
 package com.amagi82.kerbalspaceapp;
 
+
 public class OrbitalMechanics {
 
 	// This class handles calculations related to Orbital Mechanics.
@@ -90,10 +91,11 @@ public class OrbitalMechanics {
 	// This method calculates the exact deltaV required to get from a parking orbit around one body to another. Yes, this is a ridiculously
 	// lengthy method, but OrbitalMechanics is complicated.
 	public static int getTransferDeltaV(int planetStart, int planetEnd, double altitudeStart, double altitudeEnd) {
-		double deltaV1, deltaV2, deltaV3, parentEccentricity, apoapsisVelocity, periapsisVelocity;
+		double deltaV0, deltaV1, deltaV2, deltaV3, parentEccentricity, apoapsisVelocity, periapsisVelocity;
 		double orbitSemiMajorAxis; // semi major axis of the Hohmann transfer between two planets
 		double r1 = altitudeStart + equatorialRadius[planetStart];
 		double r2 = altitudeEnd + equatorialRadius[planetEnd];
+		double r1b = semiMajorAxis[planetStart];
 		double r2b = minOrbit[parentBody[planetStart]] + equatorialRadius[parentBody[planetStart]];
 
 		// Set variables for the situation
@@ -207,7 +209,8 @@ public class OrbitalMechanics {
 		// Moon to moon of another body
 		// @formatter:off
 		if (isMoon[planetEnd]) {
-			deltaV1 = Math.abs(Math.sqrt(gravParameter[parentBody[planetStart]] / r1) * (1 - Math.sqrt((2 * r2b) / (r1 + r2b))));
+			deltaV0 = Math.sqrt(2*gravParameter[planetStart]/r1) - getPeriapsisVelocity(r1,0,gravParameter[planetStart]);
+			deltaV1 = Math.abs(Math.sqrt(gravParameter[parentBody[planetStart]] / r1b) * (1 - Math.sqrt((2 * r2b) / (r1b + r2b))))- Math.sqrt(2*gravParameter[planetStart]/r1);
 			deltaV2 = Math.sqrt((gravParameter[0] / semiMajorAxis[parentBody[planetStart]])* Math.pow(
 							Math.sqrt((2 * semiMajorAxis[parentBody[planetEnd]] / (semiMajorAxis[parentBody[planetStart]] 
 							+ semiMajorAxis[parentBody[planetEnd]]))) - 1, 2) + gravParameter[parentBody[planetStart]]
@@ -220,10 +223,11 @@ public class OrbitalMechanics {
 			} else {
 				deltaV3 = Math.sqrt(gravParameter[planetEnd] / r2) * (1 - Math.sqrt((2 * r1) / (r1 + r2)));
 			}
-			return (int) Math.round((deltaV1 + deltaV2 + deltaV3 + deltaVInclinationChange)* mMarginsValue);
+			return (int) Math.round((deltaV0 + deltaV1 + deltaV2 + deltaV3 + deltaVInclinationChange)* mMarginsValue);
 		}
 		// Moon to planet
-		deltaV1 = Math.abs(Math.sqrt(gravParameter[parentBody[planetStart]] / r1) * (1 - Math.sqrt((2 * r2b) / (r1 + r2b))));
+		deltaV0 = Math.sqrt(2*gravParameter[planetStart]/r1) - getPeriapsisVelocity(r1,0,gravParameter[planetStart]);
+		deltaV1 = Math.abs(Math.sqrt(gravParameter[parentBody[planetStart]] / r1b) * (1 - Math.sqrt((2 * r2b) / (r1b + r2b))))- Math.sqrt(2*gravParameter[planetStart]/r1);
 		deltaV2 = Math.sqrt((gravParameter[0] / semiMajorAxis[parentBody[planetStart]])* Math.pow(
 						Math.sqrt((2 * semiMajorAxis[planetEnd] / (semiMajorAxis[parentBody[planetStart]] + semiMajorAxis[planetEnd]))) - 1,2)
 						+ gravParameter[parentBody[planetStart]] * ((2 / (equatorialRadius[parentBody[planetStart]] + altitudeStart)) 
@@ -236,7 +240,7 @@ public class OrbitalMechanics {
 		} else {
 			deltaV3 = getDeltaVInsertionBurn(parentBody[planetStart], planetEnd, altitudeEnd);
 		}
-		return (int) Math.round((deltaV1 + deltaV2 + deltaV3 + deltaVInclinationChange)* mMarginsValue);
+		return (int) Math.round((deltaV0 + deltaV1 + deltaV2 + deltaV3 + deltaVInclinationChange)* mMarginsValue);
 	}
 
 	// Minimum deltaV from orbit around planetStart necessary to intersect planetEnd's orbit, not including inclination changes. 

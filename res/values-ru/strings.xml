@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="about">О программе</string>
+    <string name="action_atmosphere">Атмосфера</string>
+    <string name="action_biomes">Биомы</string>
+    <string name="action_delete">Удалить</string>
+    <string name="action_help">Помощь</string>
+    <string name="action_load">Загрузить</string>
+    <string name="action_new">Новый</string>
+    <string name="action_save">Сохранить</string>
+    <string name="action_settings">Настройки</string>
+    <string name="action_topography">Топография</string>
+    <string name="add">Добавить</string>
+    <string name="app_name">Kerbal Space App</string>
+    <string name="average">Средний</string>
+    <string name="best_case">Лучший случай</string>
+    <string name="cancel">Отмена</string>
+    <string name="celestial_body">Небесное тело</string>
+    <string name="celestial_moon">Луна</string>
+    <string name="clearance">Очистка поверхности</string>
+    <string name="dismiss">Отклонить</string>
+    <string name="drawer_close">Закрыть навигационную панель</string>
+    <string name="drawer_open">Открыть навигационную панель</string>
+    <string name="efficient">Эффективный</string>
+    <string name="feedback">Отзыв</string>
+    <string name="force_language">Language</string>
+    <string name="help">Помощь</string>
+    <string name="inclination_efficiency">Эффективность тяги</string>
+    <string name="inefficient">Эффективность</string>
+    <string name="land">Земля?</string>
+    <string name="landing">Посадка: </string>
+    <string name="landing_site">Место приземления</string>
+    <string name="orbit">Орбита</string>
+    <string name="planet">планета</string>
+    <string name="safety_margins">ΔV Коэффициент Безопасности</string>
+    <string name="takeoff">Взлет: </string>
+    <string name="title_activity_mission_planner">Планировщик миссий</string>
+    <string name="title_activity_settings">Настройки</string>
+    <string name="title_missionDestination">Выбрать пункт назначения</string>
+    <string name="total_delta_v">Всего ΔV</string>
+    <string name="transfer">Передача: </string>
+    <string name="utilities">Утилиты</string>
+    <string name="worst_case">Худший случай</string>
+    <string name="zeroDV">0 m/s</string>
+    <string name="kerbol_description"> Кербол является центральной звездой Системы Кербол. У нее есть семь известных науке детей: планеты Мохо, Ив, Кербин, Дюна и Джул, а также две карликовые планеты Иилу и Дрес.</string>
+    <string name="moho_description">Мохо - самая близкая к звезде Кербол планета, являющаяся аналогом Меркурия в KSP.С версии 0.18 вращение больше не синхронизировано приливными силами с орбитальным движением вокруг Кербола.</string>
+    <string name="eve_description">Ив это вторая по близости к Кербол планета, являющаяся отображением Венеры в KSP. У нее есть один натуральный спутник: притянутый астероид, названный Джилли.</string>
+    <string name="gilly_description">Джилли это маленький астероид, единственный натуральный спутник Ив, и наименьшее небесное тело в системе Кербол.</string>
+    <string name="kerbin_description">Кербин это родина Кербалов, местонахождение Космического центра, и аналог Земли в KSP. У нее есть две луны - Мун и Минмус.</string>
+    <string name="mun_description"> Мун это наибольший естественный спутник Кербина,находящийся к нему ближе всего и являюшийся аналогом нашей Луны.</string>
+    <string name="minmus_description">Минмус - более маленькая и более отдаленная от Кербина луна.</string>
+    <string name="duna_description">Дюна это четвертая планета в системе и аналог Марса в KSP. Она красная со снежными шапками на полюсах и имеет один натуральный спутник - Айк. </string>
+    <string name="ike_description">Айк - единственная луна планеты Дюна.Спутник испытал приливную синхронизацию со своей планетой и всегда повёрнут к ней одной стороной.</string>
+    <string name="dres_description">Дрес это карликовая планета, пятая от Кербола. Она движется между орбитами планет Дюна и Джул по слегка наклонённой и вытянутой орбите.У Дрес наименьшая гравитация в Системе Кербол.</string>
+    <string name="jool_description">Джул это газовый гигант и шестая планета от Кербола, а также аналог Юпитера в KSP. Джул имеет наибольшую массу и диаметр среди всех небесных тел, исключая Кербол. Она имеет целых пять естественных спутников: Лейт, Валл, Тило, Боп, and Пол. </string>
+    <string name="laythe_description">Лейт это ближайшая к Джул луна, большая ее чать это моря, но имеются также острова и скалы.Это единственное ,исключая Кербин, небесное тело с атмосферой.Вращение Лейт синхронизировано приливными силами, и она всегда повёрнута к Джулу одной стороной. </string>
+    <string name="vall_description">Валл это второй спутник Джул.Вращение Валл синхронизировано приливными силами,и он является аналогом одного из спутников Юпитера - Европы. </string>
+    <string name="tylo_description">Тило это третья луна Джула. Это наибольший естесственный спутник и наибольшее небесное тело без атмосферы в KSP. Это аналог Ганимеда - одного из спутников Юпитера.</string>
+    <string name="bop_description">Боп - четвертая луна Джул. Это притянутый астероид, подобный Джилли. Некоторые из его гор достигают высоты 22 км, делая его орбиту опасной для полета.</string>
+    <string name="pol_description">Пол это пятый и наименьший естественный спутник Джул.У Пола самая слабая сила гравитации после Джилли.</string>
+    <string name="eeloo_description">Иилу это ледяная планета-карлик, наиболее далекая от Кербола. Ее орбита пересекает орбиту Джул, делая ее не сасой далекой от Кербола,но столкновение Иилу и Джул невозможно. Его можно сравнить с  нашим Плутоном.</string>
+    <string name="version">\n\nAuthor: Amagi82\n\n Я не сотрудничаю с авторами KSP. Мне просто нравится эта игра, и я хочу помочь этим приложением сообществу игроков.Если вы хотите связаться со мной, нажмите кнопку "Отзыв" в боковом меню.</string>
+    <string name="help_clearance">Нулевой уровень очищение считает точкой прибытия поверхность планеты. Добавьте уровень для повышения орбиты планеты.</string>
+    <string name="help_margins">Процентное выражение для человеской погрешности в дельты v. 0\%% являются минимально возможными условиями для выполнения успешного межорбитального маневра. По умолчанию 10\%%.</string>
+    <string name="help_inclination">Лучшая ситуация,наклон изменяется вручную через аэроторможение, или,если это невозможно, используя полярную орбиту для изменения наклона с высокой орбиты.Совершенность маневра невозможно, если планета не пересекает по возрастанию или убыванию узел.</string>
+
+    <string-array name="titles">
+        <item> Орбитальные характеристики</item>
+        <item> Физические характеристики</item>
+        <item> Атмосферные характеристики</item>
+        <item> Множитель науки</item>
+        <item> Дельта-V</item>
+        <item> Фазовые углы вылета</item>
+    </string-array>
+    <string-array name="orbital_categories">
+        <item> Большая полуось </item>
+        <item> Апоцентр </item>
+        <item> Перицентр </item>
+        <item> Эксцентриситет орбиты </item>
+        <item> Наклонение орбиты </item>
+        <item> Аргумент перицентра </item>
+        <item> Долгота восходящего узла </item>
+        <item> Средняя аномалия </item>
+        <item> Период обращения </item>
+        <item> Орбитальный период </item>
+        <item> Орбитальная скорость </item>
+    </string-array>
+    <string-array name="orbital_descriptions">
+        <item>Полуось-это среднее значение апоцентра и перицентра, и может быть использована для вычисления орбитального периода.</item>
+        <item>Апоцентр - это самая высокая точка орбиты родительского тела.</item>
+        <item>Перицентр самая низкая точка орбиты родительского тела.</item>
+        <item>Эксцентриситет орбиты - насколько близко орбиты к идеальному кругу. 0 круговая, 1 параболическая орбита, и >1-гипербола.</item>
+        <item>Наклонение орбиты - угол между орбитальной плоскостью и плоскостью экватора родительского тела. 0° в одной плоскости, 90° по полярной орбите, и на 180° - это ретроградная экваториальная орбита.</item>
+        <item>Аргумент перицентра - угол между перицентра и восходящего узла, измеряемый в плоскости орбиты в направлении движения.</item>
+        <item>Долгота восходящего узла - угол от опорного направления, называется исходной долготой, в направлении восходящего узла, измеренное в плоскости.</item>
+        <item>Средняя аномалия</item>
+        <item>Орбитальный период составляет один год, от опорной точки звезд.</item>
+        <item>Период обращения</item>
+        <item>Орбитальная скорость</item>
+    </string-array>
+    <string-array name="physical_categories">
+        <item>Экваториальный радиус</item>
+        <item>Площадь</item>
+        <item>Масса</item>
+        <item>Стандартный гравитационный параметр</item>
+        <item>Плотность</item>
+        <item>Сила тяжести у поверхности</item>
+        <item>Центробежная сила</item>
+        <item>Период вращения</item>
+        <item>Солнечный день</item>
+        <item>Скорости вращения</item>
+        <item>Синхронная орбита</item>
+        <item>Сферы влияния</item>
+        <item>наибольшая высота</item>
+    </string-array>
+    <string-array name="atmosphere_categories">
+        <item>Атмосферное давление</item>
+        <item>Высота</item>
+        <item>Атмосферная высота</item>
+        <item>Температура мин</item>
+        <item>Температура макс</item>
+        <item>Кислород</item>
+    </string-array>
+    <string-array name="science_multiplier">
+        <item>Поверхность</item>
+        <item>Атмосфера</item>
+        <item>Космос</item>
+    </string-array>
+    <string-array name="delta_v">
+        <item>Чтобы добраться до орбиты</item>
+        <item>Moho</item>
+        <item>Eve</item>
+        <item>Gilly</item>
+        <item>Kerbin</item>
+        <item>Mun</item>
+        <item>Minmus</item>
+        <item>Duna</item>
+        <item>Ike</item>
+        <item>Dres</item>
+        <item>Jool</item>
+        <item>Laythe</item>
+        <item>Vall</item>
+        <item>Tylo</item>
+        <item>Bop</item>
+        <item>Pol</item>
+        <item>Eeloo</item>
+    </string-array>
+    <string-array name="help_descriptions">
+        <item>Покрытие</item>
+        <item>ΔV Коэффициент Безопасности</item>
+        <item>Эффективность тяги</item>
+    </string-array>
+    <string-array name="icon_descriptions">
+        <item>Посадка и взлет</item>
+        <item>Посадка</item>
+        <item>Орбита</item>
+        <item>Взлет</item>
+    </string-array>
+
+</resources>

@@ -75,6 +75,7 @@ public class MissionPlanner extends Activity {
 		ActionBar actionBar = getActionBar();
 		actionBar.setDisplayHomeAsUpEnabled(true);
 		actionBar.setDisplayShowTitleEnabled(true);
+		getActionBar().setTitle(R.string.title_activity_mission_planner);
 
 		if (savedInstanceState == null) {
 			// Load saved missionData if available.

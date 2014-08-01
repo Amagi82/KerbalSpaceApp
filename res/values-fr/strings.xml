@@ -12,16 +12,13 @@
     <string name="action_settings">Paramètres</string>
     <string name="action_topography">Topographie</string>
     <string name="add">Ajouter</string>
-    <string name="app_name">Kerbal App Spatiales</string>
+    <string name="app_name">Kerbal Space App</string>
     <string name="average">Moyenne</string>
     <string name="best_case">Le meilleur des cas</string>
     <string name="cancel">Annuler</string>
     <string name="celestial_body">Corps céleste</string>
     <string name="celestial_moon">Lune</string>
     <string name="clearance">Liquidation de surface</string>
-    <string name="destination_add">Nouvelle destination</string>
-    <string name="destination_cancel">Nouvelle destination</string>
-    <string name="destination_title">Nouvelle destination</string>
     <string name="dismiss">Rejeter</string>
     <string name="drawer_close">Fermer navigation tiroir</string>
     <string name="drawer_open">Ouvrir le tiroir de navigation</string>

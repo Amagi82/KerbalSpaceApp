@@ -30,6 +30,7 @@ import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.v4.app.NavUtils;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -50,8 +51,8 @@ public class Settings extends Activity {
 	int mClearanceValue, mMarginsValue, mInclinationValue;
 	TextView mClearance, mMargins, mInclination;
 	static Locale language;
-	static Locale spanish = new Locale("es");
-	static Locale[] langCode = { Locale.ENGLISH, Locale.FRENCH, Locale.GERMAN, spanish };
+	static Locale spanish = new Locale("es"), russian = new Locale("ru");
+	static Locale[] langCode = { Locale.ENGLISH, Locale.FRENCH, Locale.GERMAN, spanish, russian };
 	Spinner chooseLanguage;
 
 	@Override
@@ -88,6 +89,7 @@ public class Settings extends Activity {
 		if (Locale.getDefault().getLanguage().equals("fr"))chooseLanguage.setSelection(1);
 		if (Locale.getDefault().getLanguage().equals("de"))chooseLanguage.setSelection(2);
 		if (Locale.getDefault().getLanguage().equals("es"))chooseLanguage.setSelection(3);
+		if (Locale.getDefault().getLanguage().equals("ru"))chooseLanguage.setSelection(4);
 
 		// Set seekbar progress
 		clearance.setProgress(mClearanceValue);
@@ -223,6 +225,7 @@ public class Settings extends Activity {
 			getBaseContext().getResources().updateConfiguration(config, getResources().getDisplayMetrics());
 			recreate();
 		}
+		Log.i(null, "language = " + language);
 	}
 
 	// Save the values onPause

@@ -12,16 +12,13 @@
     <string name="action_settings"> Configuración </string>
     <string name="action_topography"> Topografía </string>
     <string name="add"> Añadir </string>
-    <string name="app_name"> Aplicación Espacial Kerbal </string>
+    <string name="app_name"> Kerbal Space App </string>
     <string name="average"> Normal </string>
     <string name="best_case"> Mejor de los casos </string>
     <string name="cancel"> Cancelar </string>
     <string name="celestial_body"> Cuerpo celeste </string>
     <string name="celestial_moon"> Luna </string>
     <string name="clearance"> Liquidación de superficie </string>
-    <string name="destination_add"> Nuevo destino </string>
-    <string name="destination_cancel"> Nuevo destino </string>
-    <string name="destination_title"> Nuevo destino </string>
     <string name="dismiss"> Cerrar ventana </string>
     <string name="drawer_close"> Cerrar ventana de navegación </string>
     <string name="drawer_open"> Abrir ventana de navegación </string>
