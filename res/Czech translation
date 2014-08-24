@@ -1,0 +1,222 @@
+Czech translation
+<resources>
+
+    <string name="about">O aplikaci</string>
+    <string name="action_atmosphere">Atmosféra</string>
+    <string name="action_biomes">Biomy</string>
+    <string name="action_delete">Smazat</string>
+    <string name="action_help">Pomoc</string>
+    <string name="action_load">Načíst</string>
+    <string name="action_new">Nový</string>
+    <string name="action_save">Uložit</string>
+    <string name="action_settings">Nastavení</string>
+    <string name="action_topography">Topografie</string>
+    <string name="add">Přidat</string>
+    <string name="app_name">Kerbal Space App</string>
+    <string name="average">Průměr</string>
+    <string name="best_case">Nejlepší případ</string>
+    <string name="cancel">Zavřít</string>
+    <string name="celestial_body">Nebeské těleso</string>
+    <string name="celestial_moon">Měsíc</string>
+    <string name="clearance">Vzdálensot od povrchu</string>
+    <string name="destination_add">Přidat novou destinac</string>
+    <string name="destination_cancel">Odstranit novou destinaci</string>
+    <string name="destination_title">Nová destinace</string>
+    <string name="dismiss">Zamítnout</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="efficient">Efektivnost</string>
+    <string name="feedback">Fórum</string>
+    <string name="force_language">Jazyk</string>
+    <string name="help">Pomoc</string>
+    <string name="inclination_efficiency">Efektivnost sklonu</string>
+    <string name="inefficient">Neefektivní</string>
+    <string name="land">Povrch</string>
+    <string name="landing">Přistávání: </string>
+    <string name="landing_site">Výška přistání</string>
+    <string name="orbit">Orbita</string>
+    <string name="planet">planeta</string>
+    <string name="safety_margins">Bezepečná ΔV</string>
+    <string name="takeoff">Vzlet: </string>
+    <string name="title_activity_mission_planner">Plánování misí</string>
+    <string name="title_activity_settings">Nastavení</string>
+    <string name="title_missionDestination">Přidat destinaci</string>
+    <string name="total_delta_v">Celková ΔV</string>
+    <string name="transfer">Převod: </string>
+    <string name="utilities">Pomůcky</string>
+    <string name="worst_case">Nejhorší případ</string>
+    <string name="zeroDV">0 m/s</string>
+    <string name="Kerbol">Kerbol</string>
+    <string name="Moho">Moho</string>
+    <string name="Eve">Eve</string>
+    <string name="Kerbin">Kerbin</string>
+    <string name="Duna">Duna</string>
+    <string name="Dres">Dres</string>
+    <string name="Jool">Jool</string>
+    <string name="Eeloo">Eeloo</string>
+    <string name="Gilly">Gilly</string>
+    <string name="Mun">Mün</string>
+    <string name="Minmus">Minmus</string>
+    <string name="Ike">Ike</string>
+    <string name="Laythe">Laythe</string>
+    <string name="Vall">Vall</string>
+    <string name="Tylo">Tylo</string>
+    <string name="Bop">Bop</string>
+    <string name="Pol">Pol</string>
+    <string name="kerbol_description">Kerbol je hlavní hvězda Kerbolího systému. Má sedm známých souputníků: planety Moho, Eve, Kerbin, Duna a Jool a dvě trpasličí planety Dres a Eeloo.</string>
+    <string name="moho_description">Moho je nejbližší předgenerované těleso ke Kerbolu a KSP analogie pro Merkur. Od 0.18 už nemá vázanou rotaci s Kerbolem.</string>
+    <string name="eve_description">Eve [ɪ:v(ɒ)]je v pořadí druhá planeta od slunce a KSP analogie pro Venuši. Kolem Eve obíha malý zachycený asteroid jménem Gilly.</string>
+    <string name="gilly_description">Gilly je malý asteroid, jediná přirozená družice Eve a nejmenší předdefinované těleso v Kerbolím systému.</string>
+    <string name="kerbin_description">Kerbin je domovská planeta Kerbíků, je na něm postaveno Space Center a jeho předlohou se stala Země. Má dva měsíce: Mun a Minmus.</string>
+    <string name="mun_description">Mün je relativně velký měsíc, analogie pro náš Měsíc. Má přesně kruhovou orbitu</string>
+    <string name="minmus_description">Minmus je menší a vzdálenější měsíc Kerbinu.</string>
+    <string name="duna_description">Duna je čtvrtá planeta od Kerbolu, KSP analogie pro Mars. Většinou má červený povrch a ledové čepičky a má přírodní satelit Ike. Ikova velikost a blízkost vytvořila slapově-vázanou rotaci. </string>
+    <string name="ike_description">Ike je jediný měsíc Duny. Ike a Duna díky slapovým silám vzájemně rotují.</string>
+    <string name="dres_description">Dres je trpasličí planeta, 5. od Kerbolu. Nachází se mezi orbitami Duny a Joolu v excentrické a nakloněné orbitě. Dres má nejmenší přitažlivost z planet.</string>
+    <string name="jool_description">Jool je plyný obr a šestá planeta od Kerbolu. Je herní analogií pro Jupiter. Kromě Kerbolu, Jool má největší parametry a váhu z všech nebeských těles. Má velký komplexní systém 5 měsíců: Laythe, Vall, Tyla, Bopa a Pola. </string>
+    <string name="laythe_description">Laythe je nejbližší měsíc k Joolu. Většinu povrchu zabírá moře, ale Laythe má také sklanaté a písečné ostrovy. Má vázanou rotaci s Jool. </string>
+    <string name="vall_description">Vall je Joolův druhý měsíc. Má s ním vázanou rotaci a je analogií hry pro Europu. </string>
+    <string name="tylo_description">Tylo je Joolův třetí měsíc. Je to největší měsíc a největí těleso bez atmosféry. Jeho předlohou se stal Ganymed.</string>
+    <string name="bop_description">Bop je Joolův čtvrtý měsíc. Je to zachycený asteroid podobný Gilly. Některé gory zde dosahují až 22 km, proto hrozí nebezpečí na nízké orbitě</string>
+    <string name="pol_description">Pol je Joolův pátý a nejmenší měsíc. Pol má po Gilly druhou nejmenší přitažlivost v Kerbolí soustavě.</string>
+    <string name="eeloo_description">Eeloo je ledová trpasličí planeta, nejvzdálenější těleso od Kerbolu. Její orbita protíná Joolovu, ale v poměru 3:2, to znamená, že se kvůli různým sklonům drah nikdy nesrazí. Může být považována za herní analog pro Pluto.</string>
+    <string name="version">\n\nAuthor: Amagi82\n\nI am not affiliated with Kerbal Space Program. I just love KSP and want to give back to the community. If you\'d like to contact me for any reason, click on Feedback. Czech translation create WikiKer</string>
+    <string name="help_clearance">Nulová vzdálensot od povrchu předpokládá perfektní vzlet, minimální zpomalení atmosférou či nejvyšší horou. Přidat povrchouvou vzdálensot znamená zvýšit orbitu. Vyšší orbita také snižuje deltaV k dosažení dalších planet. Přepokládá se s kruhovými drahami.</string>
+    <string name="help_margins">Procento extra delta V pro lidskou chybu. 0\%% je minimální nárok na perfektní dráhu. Přednastavená hodnota je 10\%%.</string>
+    <string name="help_inclination">Nejlepší situace, změny sklonu jsou řešeny aerobrakingem (brzdění o atmosféru) nebo pokud to není možné, používání polární orbity ke změně sklonu ze stávájící k nejvyšší orbitě. Toto není možné, pokud planeta protíná sestupný a vzestupný bod.</string>
+
+    <string-array name="languages">
+        <item>Angličtina</item>
+        <item>Francouzština</item>
+        <item>Němčina</item>
+        <item>Španělština</item>
+        <item>Ruština</item>
+    </string-array>
+    <string-array name="titles">
+        <item>Orbitální charakterisktika</item>
+        <item>Fyzikální charakteristika</item>
+        <item>Atmosférická charakteristika</item>
+        <item>Science Násobek</item>
+        <item>Delta-V</item>
+        <item>Odletové výšky</item>
+    </string-array>
+    <string-array name="orbital_categories">
+        <item>Sklon osy</item>
+        <item>Apoapsis</item>
+        <item>Periapsis</item>
+        <item>Výstřednost</item>
+        <item>Sklon</item>
+        <item>Argument periapsy</item>
+        <item>Délka vzestupního nódu</item>
+        <item>Střední anomálie</item>
+        <item>Siderická rotační perioda</item>
+        <item>Synodická rotační perioda</item>
+        <item>Orbitální rychlost</item>
+    </string-array>
+    <string-array name="orbital_descriptions">
+        <item>Sklon osy je průměr apoapsy a periapsy, může být použit pro spočtení rotační doby.</item>
+        <item>Apoapsis je nejvyšší bod orbity.</item>
+        <item>Periapsis je nejnižší bod orbity.</item>
+        <item>Výstřednost je hodnota, jak je orbita vzdálená od perfektního kruhu. 0 je kruh, 1 je parabolická úniková dráha a více jak jedna je hyperbola.</item>
+        <item>Sklon je úhel mezi orbitou tělesa a rovníkem partnerského tělesa. 0° je stejná orbita, 90° je polární orbita a 180° opačná rovinná orbita.</item>
+        <item>Argument periapsy je úhel mezi periapsou a sestupným bodem, měřeno podle okamžité orbity.</item>
+        <item>Délka mzestupního nódu je délka od aktuální pozice, pojmenována origin of longitude, k vzestupnímu bodu, měřeno v refernční rovině.</item>
+        <item>Střední anomálie</item>
+        <item>Sidereal rotační perioda je celý rok měřený podle hvězd. </item>
+        <item>Synodická rotační perioda</item>
+        <item>Orbitální rychlost</item>
+    </string-array>
+    <string-array name="physical_categories">
+        <item>Délka rovníku</item>
+        <item>Povrch</item>
+        <item>Váha</item>
+        <item>Standartní gravitační parametr</item>
+        <item>Hustota</item>
+        <item>Povrchová přitažlvost</item>
+        <item>Úniková rychlost</item>
+        <item>Sidereal doba otočení</item>
+        <item>Den podle slunce</item>
+        <item>Siderická doba otočení</item>
+        <item>Synchronní orbita</item>
+        <item>Sféra dosahu</item>
+        <item>Nejvyšší nadmořská výška</item>
+    </string-array>
+    <string-array name="atmosphere_categories">
+        <item>Atmosférický tlak</item>
+        <item>Měřítko výšky</item>
+        <item>Výška hranice atmosféry</item>
+        <item>Minimální teplota</item>
+        <item>Maximální teplota</item>
+        <item>Přítomnost kyslíku</item>
+    </string-array>
+    <string-array name="science_multiplier">
+        <item>Povrch</item>
+        <item>Atmosféra</item>
+        <item>Vesmír</item>
+    </string-array>
+    <string-array name="delta_v">
+        <item>K dosažení orbity</item>
+        <item>Moho</item>
+        <item>Eve</item>
+        <item>Gilly</item>
+        <item>Kerbin</item>
+        <item>Mun</item>
+        <item>Minmus</item>
+        <item>Duna</item>
+        <item>Ike</item>
+        <item>Dres</item>
+        <item>Jool</item>
+        <item>Laythe</item>
+        <item>Vall</item>
+        <item>Tylo</item>
+        <item>Bop</item>
+        <item>Pol</item>
+        <item>Eeloo</item>
+    </string-array>
+    <string-array name="departure_windows_planets">
+        <item>Moho</item>
+        <item>Eve</item>
+        <item>Kerbin</item>
+        <item>Duna</item>
+        <item>Dres</item>
+        <item>Jool</item>
+        <item>Eeloo</item>
+    </string-array>
+    <string-array name="departure_windows_jool">
+        <item>Laythe</item>
+        <item>Vall</item>
+        <item>Tylo</item>
+        <item>Bop</item>
+        <item>Pol</item>
+    </string-array>
+    <string-array name="bodies">
+        <item>Moho</item>
+        <item>Eve</item>
+        <item>Gilly</item>
+        <item>Kerbin</item>
+        <item>Mun</item>
+        <item>Minmus</item>
+        <item>Duna</item>
+        <item>Ike</item>
+        <item>Dres</item>
+        <item>Jool</item>
+        <item>Laythe</item>
+        <item>Vall</item>
+        <item>Tylo</item>
+        <item>Bop</item>
+        <item>Pol</item>
+        <item>Eeloo</item>
+    </string-array>
+    <string-array name="help_descriptions">
+        <item>Vzdálenost od povrchu</item>
+        <item>Delta V Záchrané manévry</item>
+        <item>Efektivita sklonu</item>
+    </string-array>
+    <string-array name="icon_descriptions">
+        <item>Přistání a vzlet</item>
+        <item>Přistání</item>
+        <item>Orbita</item>
+        <item>Vzlet</item>
+    </string-array>
+
+</resources>
