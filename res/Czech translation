@@ -68,7 +68,7 @@ Czech translation
     <string name="eve_description">Eve [ɪ:v(ɒ)]je v pořadí druhá planeta od slunce a KSP analogie pro Venuši. Kolem Eve obíha malý zachycený asteroid jménem Gilly.</string>
     <string name="gilly_description">Gilly je malý asteroid, jediná přirozená družice Eve a nejmenší předdefinované těleso v Kerbolím systému.</string>
     <string name="kerbin_description">Kerbin je domovská planeta Kerbíků, je na něm postaveno Space Center a jeho předlohou se stala Země. Má dva měsíce: Mun a Minmus.</string>
-    <string name="mun_description">Mün je relativně velký měsíc, analogie pro náš Měsíc.</string>
+    <string name="mun_description">Mün je relativně velký měsíc, analogie pro náš Měsíc. Má přesně kruhovou orbitu</string>
     <string name="minmus_description">Minmus je menší a vzdálenější měsíc Kerbinu.</string>
     <string name="duna_description">Duna je čtvrtá planeta od Kerbolu, KSP analogie pro Mars. Většinou má červený povrch a ledové čepičky a má přírodní satelit Ike. Ikova velikost a blízkost vytvořila slapově-vázanou rotaci. </string>
     <string name="ike_description">Ike je jediný měsíc Duny. Ike a Duna díky slapovým silám vzájemně rotují.</string>
@@ -81,15 +81,16 @@ Czech translation
     <string name="pol_description">Pol je Joolův pátý a nejmenší měsíc. Pol má po Gilly druhou nejmenší přitažlivost v Kerbolí soustavě.</string>
     <string name="eeloo_description">Eeloo je ledová trpasličí planeta, nejvzdálenější těleso od Kerbolu. Její orbita protíná Joolovu, ale v poměru 3:2, to znamená, že se kvůli různým sklonům drah nikdy nesrazí. Může být považována za herní analog pro Pluto.</string>
     <string name="version">\n\nAuthor: Amagi82\n\nI am not affiliated with Kerbal Space Program. I just love KSP and want to give back to the community. If you\'d like to contact me for any reason, click on Feedback. Czech translation create WikiKer</string>
-    <string name="help_clearance">Zero surface clearance assumes a perfect ascent, barely clearing the atmosphere or the tallest mountain. Add surface clearance for a higher orbit. Note that a higher orbit will also increase delta V requirements to reach other planets. Circular orbits are assumed.</string>
-    <string name="help_margins">Percentage of extra delta V to account for human error. 0\%% would be the minimum possible requirements for a perfect maneuver. Default is 10\%%.</string>
-    <string name="help_inclination">Best case situation, inclination changes are handled through aerobraking, or if that isn\'t possible, using a polar orbit to change inclination from the body with the highest orbit. Perfection is not possible unless the planet intersects the ascending or descending node.</string>
+    <string name="help_clearance">Nulová vzdálensot od povrchu předpokládá perfektní vzlet, minimální zpomalení atmosférou či nejvyšší horou. Přidat povrchouvou vzdálensot znamená zvýšit orbitu. Vyšší orbita také snižuje deltaV k dosažení dalších planet. Přepokládá se s kruhovými drahami.</string>
+    <string name="help_margins">Procento extra delta V pro lidskou chybu. 0\%% je minimální nárok na perfektní dráhu. Přednastavená hodnota je 10\%%.</string>
+    <string name="help_inclination">Nejlepší situace, změny sklonu jsou řešeny aerobrakingem (brzdění o atmosféru) nebo pokud to není možné, používání polární orbity ke změně sklonu ze stávájící k nejvyšší orbitě. Toto není možné, pokud planeta protíná sestupný a vzestupný bod.</string>
 
     <string-array name="languages">
         <item>Angličtina</item>
         <item>Francouzština</item>
         <item>Němčina</item>
         <item>Španělština</item>
+        <item>Ruština</item>
     </string-array>
     <string-array name="titles">
         <item>Orbitální charakterisktika</item>
@@ -106,55 +107,55 @@ Czech translation
         <item>Výstřednost</item>
         <item>Sklon</item>
         <item>Argument periapsy</item>
-        <item>Longitude of the ascending node</item>
-        <item>Mean anomaly</item>
-        <item>Sidereal orbital period</item>
-        <item>Synodic orbital period</item>
-        <item>Orbital Velocity</item>
+        <item>Délka vzestupního nódu</item>
+        <item>Střední anomálie</item>
+        <item>Siderická rotační perioda</item>
+        <item>Synodická rotační perioda</item>
+        <item>Orbitální rychlost</item>
     </string-array>
     <string-array name="orbital_descriptions">
-        <item>Semi-major axis is the average of the apoapsis and periapsis, and can be used to calculate the orbital period.</item>
-        <item>Apoapsis is the highest point in an orbit from the parent body.</item>
-        <item>Periapsis is the lowest point in an orbit from the parent body.</item>
-        <item>Orbital eccentricity is how close the orbit is to a perfect circle. 0 is circular, 1 is a parabolic escape orbit, and >1 is a hyperbola.</item>
-        <item>Orbital inclination is the angle between the orbit\'s plane and the equatorial plane of the parent body. 0° is the same plane, 90° is a polar orbit, and 180° is a retrograde equatorial orbit.</item>
-        <item>Argument of periapsis is the angle between the periapsis and the ascending node, measured in the orbital plane in the direction of motion.</item>
-        <item>Longitude of the ascending node is the angle from a reference direction, called the origin of longitude, to the direction of the ascending node, measured in a reference plane.</item>
-        <item>Mean anomaly</item>
-        <item>Sidereal orbital period is one full year, from a reference point of the stars. </item>
-        <item>Synodic orbital period</item>
-        <item>Orbital Velocity</item>
+        <item>Sklon osy je průměr apoapsy a periapsy, může být použit pro spočtení rotační doby.</item>
+        <item>Apoapsis je nejvyšší bod orbity.</item>
+        <item>Periapsis je nejnižší bod orbity.</item>
+        <item>Výstřednost je hodnota, jak je orbita vzdálená od perfektního kruhu. 0 je kruh, 1 je parabolická úniková dráha a více jak jedna je hyperbola.</item>
+        <item>Sklon je úhel mezi orbitou tělesa a rovníkem partnerského tělesa. 0° je stejná orbita, 90° je polární orbita a 180° opačná rovinná orbita.</item>
+        <item>Argument periapsy je úhel mezi periapsou a sestupným bodem, měřeno podle okamžité orbity.</item>
+        <item>Délka mzestupního nódu je délka od aktuální pozice, pojmenována origin of longitude, k vzestupnímu bodu, měřeno v refernční rovině.</item>
+        <item>Střední anomálie</item>
+        <item>Sidereal rotační perioda je celý rok měřený podle hvězd. </item>
+        <item>Synodická rotační perioda</item>
+        <item>Orbitální rychlost</item>
     </string-array>
     <string-array name="physical_categories">
-        <item>Equatorial radius</item>
-        <item>Surface area</item>
-        <item>Mass</item>
-        <item>Standard gravitational parameter</item>
-        <item>Density</item>
-        <item>Surface gravity</item>
-        <item>Escape velocity</item>
-        <item>Sidereal rotation period</item>
-        <item>Solar day</item>
-        <item>Sidereal rotation velocity</item>
-        <item>Synchronous orbit</item>
-        <item>Sphere of influence</item>
-        <item>Highest Elevation</item>
+        <item>Délka rovníku</item>
+        <item>Povrch</item>
+        <item>Váha</item>
+        <item>Standartní gravitační parametr</item>
+        <item>Hustota</item>
+        <item>Povrchová přitažlvost</item>
+        <item>Úniková rychlost</item>
+        <item>Sidereal doba otočení</item>
+        <item>Den podle slunce</item>
+        <item>Siderická doba otočení</item>
+        <item>Synchronní orbita</item>
+        <item>Sféra dosahu</item>
+        <item>Nejvyšší nadmořská výška</item>
     </string-array>
     <string-array name="atmosphere_categories">
-        <item>Atmospheric pressure</item>
-        <item>Scale height</item>
-        <item>Atmospheric height</item>
-        <item>Temperature min</item>
-        <item>Temperature max</item>
-        <item>Oxygen present</item>
+        <item>Atmosférický tlak</item>
+        <item>Měřítko výšky</item>
+        <item>Výška hranice atmosféry</item>
+        <item>Minimální teplota</item>
+        <item>Maximální teplota</item>
+        <item>Přítomnost kyslíku</item>
     </string-array>
     <string-array name="science_multiplier">
-        <item>Surface</item>
-        <item>Atmospheric</item>
-        <item>Space</item>
+        <item>Povrch</item>
+        <item>Atmosféra</item>
+        <item>Vesmír</item>
     </string-array>
     <string-array name="delta_v">
-        <item>To reach orbit</item>
+        <item>K dosažení orbity</item>
         <item>Moho</item>
         <item>Eve</item>
         <item>Gilly</item>
@@ -207,15 +208,15 @@ Czech translation
         <item>Eeloo</item>
     </string-array>
     <string-array name="help_descriptions">
-        <item>Surface Clearance</item>
-        <item>Delta V Safety Margins</item>
-        <item>Inclination Efficiency</item>
+        <item>Vzdálenost od povrchu</item>
+        <item>Delta V Záchrané manévry</item>
+        <item>Efektivita sklonu</item>
     </string-array>
     <string-array name="icon_descriptions">
-        <item>Land and take off</item>
-        <item>Land</item>
-        <item>Orbit</item>
-        <item>Take off</item>
+        <item>Přistání a vzlet</item>
+        <item>Přistání</item>
+        <item>Orbita</item>
+        <item>Vzlet</item>
     </string-array>
 
 </resources>
